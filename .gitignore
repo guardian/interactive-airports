@@ -6,3 +6,9 @@ yarn.lock
 .DS_Store
 src/server/out
 src/server/combined
+src/server/scraped
+src/server/scraped_old
+src/server/scraped2
+src/server/scraped3
+src/assets/planes.json
+src/assets/all_planes.json

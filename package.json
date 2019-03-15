@@ -11,7 +11,10 @@
     "deploylive": "gulp deploylive",
     "deploypreview": "gulp deploypreview",
     "airports": "babel-node src/server/airports.js",
-    "combine": "babel-node src/server/combine.js"
+    "combine": "babel-node src/server/combine.js",
+    "scrape": "babel-node src/server/scrape.js",
+    "process": "babel-node src/server/process.js",
+    "process_all": "babel-node src/server/process_all.js"
   },
   "author": "",
   "license": "ISC",
@@ -53,15 +56,22 @@
     "webpack-stream": "5.0.0"
   },
   "dependencies": {
+    "d3": "^5.7.0",
+    "d3-geo-projection": "^2.6.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.11",
+    "mkdirp": "^0.5.1",
     "mustache": "^2.3.0",
+    "node-fetch": "^2.3.0",
     "promise-polyfill": "^6.0.2",
     "puppeteer": "^1.11.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "require-uncached": "^1.0.3",
-    "unfetch": "^3.0.0"
+    "throttle-promise": "^1.0.4",
+    "topojson": "^3.0.2",
+    "unfetch": "^3.0.0",
+    "world-atlas": "^1.1.4"
   }
 }

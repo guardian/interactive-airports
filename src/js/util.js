@@ -51,9 +51,9 @@ const duplicate = ( el, className ) => {
 
 const pseq = (arr, lambda) => {
 
-	return arr.reduce( (agg, cur) => {
+	return arr.reduce( (agg, cur, i, arr) => {
 
-		return agg.then(res => lambda(cur).then( res2 => res.concat(res2)))
+		return agg.then(res => lambda(cur, i, arr).then( res2 => res.concat(res2)))
 
 	}, Promise.resolve([]) )
 
